@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Contable | AUREC.SAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Portal AUREC.SAS</h1>
+        <p>Módulo de consulta rápida de clientes y NIT.</p>
+
+        <!-- Formulario con ID para JavaScript -->
+        <form class="formulario" id="formConsulta">
+            <div class="campo">
+                <label for="nit">NIT o Razón Social</label>
+                <input type="text" id="nit" name="nit" placeholder="Ej: 900.123.456-7" required>
+            </div>
+
+            <div class="campo">
+                <label for="tipo">Tipo de Proceso</label>
+                <select id="tipo" name="tipo">
+                    <option value="exogena">Medios Magnéticos (Exógena)</option>
+                    <option value="renta">Conciliación Fiscal / Renta</option>
+                    <option value="auditoria">Auditoría Benford (NIA 240)</option>
+                    <option value="niif">Deterioro de Cartera (NIIF 9)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton-consultar">Consultar Información</button>
+        </form>
+
+        <!-- Bloque donde JavaScript inyectará el resultado -->
+        <div id="resultado" class="contenedor-resultado" style="display: none;"></div>
+
+        <div class="pie-tarjeta">
+            <a href="https://www.edgarjulianmartinez.com" target="_blank" class="enlace-web">Visitar www.edgarjulianmartinez.com</a>
+        </div>
+    </div>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+//* 1. Reseteo y tipografía general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e293b; /* Fondo azul oscuro pizarra */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 2. Tarjeta principal */
+.contenedor {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor h1 {
+    font-size: 1.6rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.contenedor p {
+    font-size: 0.95rem;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 3. Estilos de los campos del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Espacio entre cada campo */
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #f8fafc;
+}
+
+/* Efecto cuando haces clic dentro del campo para escribir */
+.campo input:focus,
+.campo select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    background-color: #ffffff;
+}
+
+/* 4. Botón principal */
+.boton-consultar {
+    padding: 12px;
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 5px;
+}
+
+.boton-consultar:hover {
+    background-color: #1e293b;
+}
+
+.boton-consultar:active {
+    transform: scale(0.98);
+}
+
+/* 5. Enlace secundario */
+.pie-tarjeta {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.enlace-web {
+    font-size: 0.85rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enlace-web:hover {
+    text-decoration: underline;
+}
+/* 6. Estilos de la respuesta interactiva (JavaScript) */
+.contenedor-resultado {
+    margin-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
+
+.alerta-exito {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+}
+
+.alerta-exito h3 {
+    font-size: 1rem;
+    color: #166534;
+    margin-bottom: 8px;
+}
+
+.alerta-exito p {
+    font-size: 0.88rem;
+    color: #1f2937;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.badge {
+    background-color: #22c55e;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+.alerta-exito small {
+    display: block;
+    color: #64748b;
+    font-size: 0.75rem;
+    margin-top: 6px;
+}
